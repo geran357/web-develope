@@ -1,0 +1,134 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #111827;
+    width: 230px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.main-content {
+    background-color: rgb(233, 233, 233);
+    flex-grow: 1;
+}
+
+.sidebar .description-header {
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+    
+}
+
+.sidebar a{
+    text-decoration: none;
+}
+
+.sidebar .header .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar .header .list-item .icon {
+    margin-right: 12px;
+
+}
+
+.sidebar .header .ilustration {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px 0 22px 0;
+    box-sizing: border-box;
+}
+
+.sidebar .main .list-item .description {
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar .main .list-item .icon {
+    margin-right: 12px;
+}
+
+.sidebar .main .list-item {
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+.sidebar .main .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.sidebar .main .list-item:hover {
+    background: rgb(43, 55, 226);
+}
+
+.container {
+    width: 1000px;
+    min-height: 200px;
+}
+
+
+
+.text {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    width: 100%;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.text2 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    width: 100%;
+    background: rgb(11, 145, 255);
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align:  center;
+}
+
+.container {
+    width: 100%;
+    min-height: 200px;
+ }

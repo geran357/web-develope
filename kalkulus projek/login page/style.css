@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:ital,wght@0,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(0, 217, 255);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    width: 100%;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+   flex-wrap: wrap;
+}
+
+#check {
+    display: none;
+}
+
+.container .form {
+    padding: 2rem;
+}
+
+.form header {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form input {
+    height: 60px;
+    width: 100px;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid white;
+    border-radius: 7px;
+    outline: none;
+}
+
+.form input:focus{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.form a{
+    font-size: 18px;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form input .button{
+    color: darkolivegreen;
+    background: darkcyan;
+    font-size: 1.3rem;
+    font-weight: 560;
+    letter-spacing: 2px;
+    margin-top: 1.6rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.form input .button {
+    background-color: cadetblue;
+}
+
+.script {
+    user-select: none;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+ }
+
+ /*untuk layar device berukuran kecil*/
+@media screen and (min-width: 450px) {
+    .light_blue, .green {
+        width: 50%
+    }
+ }
+
+ /*untuk layar device berukuran sedang*/
+@media screen and (min-width: 550px) {
+    .red {
+        width: 33%;
+    }
+  
+    .orange {
+        width: 67%;
+    }
+ }
+  
+ /*untuk layar device berukuran besar*/
+ @media screen and (min-width: 800px) {
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }

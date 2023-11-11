@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="form">
+            <header>Login To Web</header>
+            <form onsubmit="return validateForm()" action="/layout.html">
+                <input type="text" placeholder="username" id="username">
+                <input type="password" placeholder="password" id="password">
+                <input type="submit" value="login" class="button">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Array  menyimpan informasi pengguna agar diizinkan
+        var allowedUsers = [
+            { username: "fajar", password: "079" },
+            { username: "dika", password: "049" },
+            { username: "farha", password: "072" },
+            { username: "bu euis", password: "7792" },
+            // Tambahkan user jika diperlukan
+        ];
+
+        function validateForm() {
+            // Mendapatkan nilai input username dan password
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Memeriksa apakah username dan password sesuai dengan yang diizinkan
+            var isValidUser = allowedUsers.some(function(user) {
+                return user.username === username && user.password === password;
+            });
+
+            if (isValidUser) {
+                alert("Login berhasil!");
+                return true; // Izinkan pengguna untuk mengakses halaman
+            } else {
+                alert("Login gagal. Username atau password tidak valid.");
+                return false; // Mencegah formulir dikirim
+            }
+        }
+    </script>
+
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #111827;
+      color: white;
+      text-align: center;
+      
+    }
+    </style>
+    
+    <div class="footer">
+      <p>HUBUNGI ADMIN WEB INI UNTUK LOGIN KE HALAMAN BERIKUTNYA</p>
+      <a href="https://wa.me/0895352281010"><button>Contact Person</button></a>
+    </div>
+</body>
+</html>
